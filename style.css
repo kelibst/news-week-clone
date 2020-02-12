@@ -1,0 +1,53 @@
+:root {
+    --main-bg-color: #f72210;
+  }
+
+.red-header{
+    background: var(--main-bg-color);
+}
+header{
+    color: white;
+}
+.header-date, .header-subscribe{
+    position: relative;
+}
+.brand svg{
+    fill: white;
+}
+.header-date date{
+    position: absolute;
+    bottom: 0;
+}
+.content{
+    max-width: 1310px;
+}
+
+.signin{
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 3px 3px;
+    position: absolute;
+    bottom: 0;
+    right: 140px;
+}
+.signin:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+.subscribe{
+    font-weight: bolder;
+    color: var(--main-bg-color);
+    text-transform: uppercase;
+    padding: 2px 13px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.subscribe:hover{
+    text-decoration: none;
+    color: var(--main-bg-color);
+}
