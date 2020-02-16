@@ -10,6 +10,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <title>Newsweek - News </title>
 </head>
@@ -18,14 +19,14 @@
   <div class="row">
     <div class="content shadow-none bg-white container-xl p-0">
       <header class="header-row">
-        <div class="d-flex py-3 red-header m-auto">
+        <div class="d-flex p-3 red-header m-auto">
           <div class="col header-date">
             <date>Tue, Feb 11, 2020</date>
           </div>
-          <div class="col">
-            <div class="header-middle">
+          
+            <div class="header-middle d-none d-lg-block">
               <a class="brand" href="/">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
                   style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
                   <g>
@@ -36,30 +37,31 @@
                 </svg>
               </a>
             </div>
-          </div>
+          
           <div class="col header-subscribe">
             <a href="#" class="signin">sign in</a>
             <a href="#" class="subscribe bg-white">subscribe <i class="fas fa-chevron-right"></i></a>
+            <a href="#" class="menu-icon d-lg-none"><i class="fas fa-bars"></i></a>
           </div>
         </div>
 
         <!-- header navigation bar -->
-        <nav class="header-bottom">
-          <div class="navbar flex-md navbar-expand justify-content-between">
+        <nav class="header-bottom d-none d-lg-flex">
+          <div class="container-fluid navbar flex-md navbar-expand justify-content-between">
 
             <ul class="page-nav navbar-nav">
               <li class="nav-item first  active"><a class="nav-link" href="/us" title="">U.S.</a></li>
-              <li class="nav-item "><a class="nav-link" href="/world" title="">World</a></li>
-              <li class="nav-item "><a class="nav-link" href="/business" title="">Business</a></li>
-              <li class="nav-item "><a class="nav-link" href="/tech-science" title="">Tech &amp; Science</a></li>
-              <li class="nav-item "><a class="nav-link" href="/culture" title="">Culture</a></li>
-              <li class="nav-item "><a class="nav-link" href="/newsgeek" title="">Newsgeek</a></li>
-              <li class="nav-item "><a class="nav-link" href="/sports" title="">Sports</a></li>
-              <li class="nav-item "><a class="nav-link" href="/health" title="">Health</a></li>
-              <li class="nav-item "><a class="nav-link" href="/the-debate" title="">The Debate</a></li>
-              <li class="nav-item "><a class="nav-link" href="/vantage" title="">Vantage</a></li>
-              <li class="nav-item "><a class="nav-link" href="/weather" title="">Weather</a></li>
-              <li class="last nav-item "><a class="nav-link" href="#"><input type="text" placeholder="Search"><i
+              <li class="nav-item "><a class="nav-link pr-0" href="/world" title="">World</a></li>
+              <li class="nav-item "><a class="nav-link pr-0" href="/business" title="">Business</a></li>
+              <li class="nav-item "><a class="nav-link pr-0" href="/tech-science" title="">Tech &amp; Science</a></li>
+              <li class="nav-item "><a class="nav-link pr-0" href="/culture" title="">Culture</a></li>
+              <li class="nav-item "><a class="nav-link pr-0" href="/newsgeek" title="">Newsgeek</a></li>
+              <li class="nav-item "><a class="nav-link pr-0" href="/sports" title="">Sports</a></li>
+              <li class="nav-item "><a class="nav-link pr-0" href="/health" title="">Health</a></li>
+              <li class="nav-item "><a class="nav-link pr-0" href="/the-debate" title="">The Debate</a></li>
+              <li class="nav-item "><a class="nav-link pr-0" href="/vantage" title="">Vantage</a></li>
+              <li class="nav-item "><a class="nav-link pr-0" href="/weather" title="">Weather</a></li>
+              <li class="last nav-item "><a class="nav-link pr-0" href="#"><input type="text" placeholder="Search"><i
                     class="fas fa-search"></i></a></li>
             </ul>
           </div>
@@ -69,9 +71,9 @@
 
       <main class="container-fluid">
         <div class="row py-4 justify-content-between">
-          <div class="col-8 d-flex sticky-container">
+          <div class="col-lg-8  col-12 col-sm-12 d-md-flex  featured-stories">
 
-            <section class="col-5 pr-2 sticky-container">
+            <section class="col-lg-5 col-md-5 col-12 col-sm-12 pr-2">
               <h5 class="section-header">featured stories </h5>
 
               <!-- bootstrap-card -->
@@ -332,7 +334,7 @@
 
 
             </section>
-            <section class="col-7 pr-2 sticky-container">
+            <section class="col-lg-7 col-12 col-md-7 col-sm-12 pr-2 top-stories sticky-container">
               <h5 class="section-header ">Top Story</h5>
               <article class="card">
                 <picture>
@@ -625,11 +627,13 @@
 
 
           </div>
-          <aside class="col-4 sticky-container">
+
+
+          <aside class="col-sm-12  col-lg-4 col-12 px-sm-4 asideed sticky-container">
             <h5 class="section-header">opinion </h5>
 
             <div class="container-fluid opinion-section d-flex">
-              <div class="more-img col-3">
+              <div class="more-img ">
                 <img class="rounded-circle"
                   src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580"
                   alt="">
@@ -646,7 +650,7 @@
             </div>
 
             <div class="container-fluid card-btm-title opinion-section d-flex">
-              <div class="more-img col-3">
+              <div class="more-img ">
                 <img class="rounded-circle"
                   src="https://d.newsweek.com/en/full/1555939/mark-joseph.png?w=63&h=63&f=33ea309c94ea8adc6d59a915e8f1e60e"
                   alt="">
@@ -663,7 +667,7 @@
             </div>
 
             <div class="container-fluid card-btm-title opinion-section d-flex">
-              <div class="more-img col-3">
+              <div class="more-img ">
                 <img class="rounded-circle"
                   src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580"
                   alt="">
@@ -680,7 +684,7 @@
             </div>
 
             <div class="container-fluid card-btm-title opinion-section d-flex">
-              <div class="more-img col-3">
+              <div class="more-img ">
                 <img class="rounded-circle"
                   src="https://d.newsweek.com/en/full/1566635/hank-johnson-michael-shank.png?w=63&h=63&f=b2f54d8dde19e9b55c4196f6cc4c4a93"
                   alt="">
@@ -697,7 +701,7 @@
             </div>
 
             <div class="container-fluid card-btm-title opinion-section d-flex">
-              <div class="more-img col-3">
+              <div class="more-img ">
                 <img class="rounded-circle"
                   src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580"
                   alt="">
@@ -714,7 +718,7 @@
             </div>
 
             <div class="container-fluid card-btm-title opinion-section d-flex">
-              <div class="more-img col-3">
+              <div class="more-img ">
                 <img class="rounded-circle"
                   src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580"
                   alt="">
@@ -733,8 +737,8 @@
             <h5 class="section-header">LATEST NEWS </h5>
 
             <div class="container-fluid d-flex b-btm1 more">
-              <div class="more-img col-5">
-                <img class="img-fluid img-latest"
+              <div class="more-img-2">
+                <img class="img-fluid img-latest img-fluid"
                   src="https://d.newsweek.com/en/full/1566870/marcia-taylor.jpg?w=397&h=265&f=cefe3ed4fbf36e317767bcd627c04234"
                   alt="">
               </div>
@@ -747,8 +751,8 @@
 
 
             <div class="container-fluid d-flex b-btm1 more mb-2">
-              <div class="more-img col-5">
-                <img class="img-fluid img-latest"
+              <div class="more-img-2">
+                <img class="img-fluid img-latest img-fluid"
                   src="https://d.newsweek.com/en/full/1566803/outlander-season-5-cast.jpg?w=397&h=265&f=9b0946d9023a40849e5ccb27ebd24bb7"
                   alt="">
               </div>
@@ -760,8 +764,8 @@
             </div>
 
             <div class="container-fluid d-flex b-btm1 more mb-2">
-              <div class="more-img col-5">
-                <img class="img-fluid img-latest"
+              <div class="more-img-2">
+                <img class="img-fluid img-latest img-fluid"
                   src="https://d.newsweek.com/en/full/1566803/outlander-season-5-cast.jpg?w=397&h=265&f=9b0946d9023a40849e5ccb27ebd24bb7"
                   alt="">
               </div>
@@ -774,8 +778,8 @@
 
 
             <div class="container-fluid d-flex b-btm1 more">
-              <div class="more-img col-5">
-                <img class="img-fluid img-latest"
+              <div class="more-img-2">
+                <img class="img-fluid img-latest img-fluid"
                   src="https://d.newsweek.com/en/full/1566870/marcia-taylor.jpg?w=397&h=265&f=cefe3ed4fbf36e317767bcd627c04234"
                   alt="">
               </div>
@@ -787,8 +791,8 @@
             </div>
 
             <div class="container-fluid d-flex b-btm1 more mb-2">
-              <div class="more-img col-5">
-                <img class="img-fluid img-latest"
+              <div class="more-img-2">
+                <img class="img-fluid img-latest img-fluid"
                   src="https://d.newsweek.com/en/full/1566803/outlander-season-5-cast.jpg?w=397&h=265&f=9b0946d9023a40849e5ccb27ebd24bb7"
                   alt="">
               </div>
@@ -800,8 +804,8 @@
             </div>
 
             <div class="container-fluid d-flex b-btm1 more">
-              <div class="more-img col-5">
-                <img class="img-fluid img-latest"
+              <div class="more-img-2">
+                <img class="img-fluid img-latest img-fluid"
                   src="https://d.newsweek.com/en/full/1566870/marcia-taylor.jpg?w=397&h=265&f=cefe3ed4fbf36e317767bcd627c04234"
                   alt="">
               </div>
@@ -815,7 +819,7 @@
             <br><br>
             <!-- sponsored section -->
 
-            <article class="card border">
+            <article class="card col-12 col-sm-5 mx-sm-auto col-lg-12 border">
               <picture>
                 <img class="card-img-top"
                   src="https://d.newsweek.com/en/full/1561558/saudi-picture.jpg?w=343&h=229&f=c38d1701b1898e7dcc79c2e2dc3aef4a"
@@ -834,7 +838,7 @@
             </article>
             <br>
 
-            <div class=" col-10 mx-auto   bg-light py-4">
+            <div class=" card col-12 col-sm-5 mx-auto col-lg-12   bg-light py-4">
               <div class="logo-container d-flex">
                 <div class="right-side-logo mr-2">
 
@@ -850,7 +854,7 @@
             </div>
 
             <br>
-            <article class="card border">
+            <article class="card col-12 col-sm-5 mx-sm-auto col-lg-12 border">
               <picture>
                 <img class="card-img-top"
                   src="https://d.newsweek.com/en/full/1556493/ohio-northern-university-pettit-college-law.jpg?w=343&h=229&f=83cc4a2b96cbd472e102cf04f99fc5be"
@@ -868,7 +872,7 @@
               </div>
             </article>
 
-            <article class="card border">
+            <article class="card col-12 col-sm-5 mx-sm-auto col-lg-12 border">
               <picture>
                 <img class="card-img-top"
                   src="https://d.newsweek.com/en/full/1561558/saudi-picture.jpg?w=343&h=229&f=c38d1701b1898e7dcc79c2e2dc3aef4a"
@@ -886,7 +890,7 @@
               </div>
             </article>
 
-            <article class="card border">
+            <article class="card col-12 col-sm-5 mx-sm-auto col-lg-12 border">
               <picture>
                 <img class="card-img-top"
                   src="https://d.newsweek.com/en/full/1551987/hubbard-school-journalism-mass-communication.jpg?w=343&h=229&f=b588b3c79d85cc0c8e4829c41c46cd11"
@@ -908,7 +912,7 @@
       </main>
 
       <section class="row px-4 my-4">
-        <div class="col-3 left-side">
+        <div class="col-sm-12 col-md-3 py-4 left-side">
 
           <!-- bootstrap-card -->
 
@@ -931,7 +935,7 @@
 
         </div>
 
-        <div class="right-side col-9">
+        <div class="right-side col-sm-12 col-md-9">
           <div class="right-side-header d-flex justify-content-center">
             <div class="right-side-logo mr-2">
 
@@ -941,7 +945,7 @@
             </h6>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <article class="card">
                 <picture>
                   <img class="card-img-top ht-100"
@@ -963,7 +967,7 @@
               </article>
             </div>
 
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <article class="card">
                 <picture>
                   <img class="card-img-top ht-100"
@@ -986,7 +990,7 @@
             </div>
 
 
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
               <article class="card">
                 <picture>
                   <img class="card-img-top ht-100"
@@ -1010,11 +1014,11 @@
           </div>
 
         </div>
-        <div class="row">
-          <div class="container-fluid d-flex">
+        <div class="row px-4">
+          
 
 
-            <div class="col">
+            <div class="col-sm-12 col-md-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top ht-100"
@@ -1036,7 +1040,7 @@
               </article>
             </div>
 
-            <div class="col">
+            <div class="col-sm-12 col-md-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top ht-100"
@@ -1057,7 +1061,7 @@
               </article>
             </div>
 
-            <div class="col">
+            <div class="col-sm-12 col-md-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top ht-100"
@@ -1079,7 +1083,7 @@
               </article>
             </div>
 
-            <div class="col">
+            <div class="col-sm-12 col-md-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top ht-100"
@@ -1101,12 +1105,12 @@
             </div>
 
 
-          </div>
+          
         </div>
       </section>
 
 
-      <section class="editors px-4 row">
+      <section class="editors px-4 row seclected">
 
         <div class="container-fluid">
 
@@ -1120,9 +1124,9 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="container-fluid d-flex">
-            <div class="col">
+        
+          
+            <div class="col-12 col-sm-6 col-lg-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top"
@@ -1143,7 +1147,7 @@
             </div>
 
 
-            <div class="col">
+            <div class="col-12 col-sm-6 col-lg-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top"
@@ -1164,7 +1168,7 @@
               </article>
             </div>
 
-            <div class="col">
+            <div class="col-12 col-sm-6 col-lg-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top"
@@ -1185,7 +1189,7 @@
               </article>
             </div>
 
-            <div class="col">
+            <div class="col-12 col-sm-6 col-lg-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top"
@@ -1206,14 +1210,12 @@
                 </div>
               </article>
             </div>
-          </div>
-        </div>
+        
 
 
 
-        <div class="row">
-          <div class="container-fluid d-flex">
-            <div class="col">
+              
+            <div class="col-12 col-sm-6 col-lg-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top"
@@ -1235,7 +1237,7 @@
             </div>
 
 
-            <div class="col">
+            <div class="col-12 col-sm-6 col-lg-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top"
@@ -1255,7 +1257,7 @@
               </article>
             </div>
 
-            <div class="col">
+            <div class="col-12 col-sm-6 col-lg-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top"
@@ -1276,7 +1278,7 @@
               </article>
             </div>
 
-            <div class="col">
+            <div class="col-12 col-sm-6 col-lg-3">
               <article class="card">
                 <picture>
                   <img class="card-img-top"
@@ -1287,7 +1289,8 @@
                 <div class="card-body">
                   <h4 class="card-title">
                     <a href="#" class="card-title-link">Protest Outside Chicago Post Office After Spanish Speakers
-                      Refused Service </h4>
+                      Refused Service
+                    </a> </h4>
                   <p class="card-text">China announced 108 deaths in the past day, with 103 in the Hubei province, one
                     in Beijing, one in Tianjin and one in the Heilongjiang province.</p>
 
@@ -1296,8 +1299,7 @@
                 </div>
               </article>
             </div>
-          </div>
-        </div>
+        
 
 
       </section>
@@ -1440,7 +1442,7 @@
       </section>
 
       <hr>
-      <section class="editors px-4 row">
+      <section class="editors px-4 d-md-none d-lg-flex row">
 
         <div class="container-fluid">
 
@@ -1454,7 +1456,7 @@
 
 
               <div class="row">
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -1471,7 +1473,7 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -1488,14 +1490,14 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <div class="row">
                     <div class="container-fluid d-flex flex-column">
 
 
-                      <div class="col">
-                        <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                      <div class="col p-0 m-0">
+                        <div class="container-fluid d-flex p-0 m-0 b-btm1 more">
+                          <div class="more-img-2">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566780/donald-trump.jpg?w=135&h=90&f=2f763462007c13b89b723d50102505ac"
                               alt="">
@@ -1508,9 +1510,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
-                        <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                      <div class="col p-0 m-0">
+                        <div class="container-fluid p-0 m-0 d-flex b-btm1 more">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566735/virginia.jpg?w=135&h=90&f=5718f186c8a391b236f60b78deda0e5b"
                               alt="">
@@ -1523,9 +1525,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
-                        <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                      <div class="col p-0 m-0">
+                        <div class="container-fluid p-0 m-0 d-flex b-btm1 more">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566715/confederate-flag.jpg?w=135&h=90&f=783ca84720623d6886d02a31fc0f718e"
                               alt="">
@@ -1552,7 +1554,7 @@
       </section>
 
 
-      <section class="editors px-4 row">
+      <section class="editors px-4  d-md-none d-lg-flex row">
 
         <div class="container-fluid">
 
@@ -1566,7 +1568,7 @@
 
 
               <div class="row">
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -1584,7 +1586,7 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -1601,14 +1603,14 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <div class="row">
                     <div class="container-fluid d-flex flex-column">
 
 
-                      <div class="col">
+                      <div class="col p-0 m-0">
                         <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566780/donald-trump.jpg?w=135&h=90&f=2f763462007c13b89b723d50102505ac"
                               alt="">
@@ -1621,9 +1623,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
-                        <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                      <div class="col p-0 m-0">
+                        <div class="container-fluid p-0 m-0 d-flex b-btm1 more">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566735/virginia.jpg?w=135&h=90&f=5718f186c8a391b236f60b78deda0e5b"
                               alt="">
@@ -1636,9 +1638,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
-                        <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                      <div class="col p-0 m-0">
+                        <div class="container-fluid p-0 m-0 d-flex b-btm1 more">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566715/confederate-flag.jpg?w=135&h=90&f=783ca84720623d6886d02a31fc0f718e"
                               alt="">
@@ -1664,7 +1666,7 @@
 
       </section>
 
-      <section class="editors px-4 row">
+      <section class="editors px-4  d-md-none d-lg-flex  row">
 
         <div class="container-fluid">
 
@@ -1678,7 +1680,7 @@
 
 
               <div class="row">
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -1695,7 +1697,7 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -1711,14 +1713,14 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <div class="row">
                     <div class="container-fluid d-flex flex-column">
 
 
-                      <div class="col">
-                        <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                      <div class="col p-0 m-0">
+                        <div class="container-fluid p-0 m-0 d-flex b-btm1 more">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566780/donald-trump.jpg?w=135&h=90&f=2f763462007c13b89b723d50102505ac"
                               alt="">
@@ -1731,9 +1733,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
-                        <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                      <div class="col p-0 m-0">
+                        <div class="container-fluid p-0 m-0 d-flex b-btm1 more">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566735/virginia.jpg?w=135&h=90&f=5718f186c8a391b236f60b78deda0e5b"
                               alt="">
@@ -1746,9 +1748,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
+                      <div class="col p-0 m-0">
                         <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566715/confederate-flag.jpg?w=135&h=90&f=783ca84720623d6886d02a31fc0f718e"
                               alt="">
@@ -1775,7 +1777,7 @@
       </section>
 
 
-      <section class="editors px-4 row">
+      <section class="editors px-4  d-md-none d-lg-flex row">
 
         <div class="container-fluid">
 
@@ -1789,7 +1791,7 @@
 
 
               <div class="row">
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -1806,7 +1808,7 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -1823,14 +1825,14 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <div class="row">
                     <div class="container-fluid d-flex flex-column">
 
 
                       <div class="col">
                         <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566780/donald-trump.jpg?w=135&h=90&f=2f763462007c13b89b723d50102505ac"
                               alt="">
@@ -1845,7 +1847,7 @@
 
                       <div class="col">
                         <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566735/virginia.jpg?w=135&h=90&f=5718f186c8a391b236f60b78deda0e5b"
                               alt="">
@@ -1860,7 +1862,7 @@
 
                       <div class="col">
                         <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566715/confederate-flag.jpg?w=135&h=90&f=783ca84720623d6886d02a31fc0f718e"
                               alt="">
@@ -1886,7 +1888,7 @@
 
       </section>
 
-      <section class="editors px-4 row">
+      <section class="editors px-4  d-md-none d-lg-flex row">
 
         <div class="container-fluid">
 
@@ -1900,7 +1902,7 @@
 
 
               <div class="row">
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -1917,7 +1919,7 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -1934,14 +1936,14 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <div class="row">
                     <div class="container-fluid d-flex flex-column">
 
 
-                      <div class="col">
+                      <div class="col p-0" m-0>
                         <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566784/all-boys-2.jpg?w=397&h=265&f=98094ecb873e747e0ed196463dcd3d20"
                               alt="">
@@ -1954,9 +1956,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
+                      <div class="col p-0 m-0">
                         <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566735/virginia.jpg?w=135&h=90&f=5718f186c8a391b236f60b78deda0e5b"
                               alt="">
@@ -1969,9 +1971,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
+                      <div class="col p-0 m-0">
                         <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                          <div class="more-img">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566715/confederate-flag.jpg?w=135&h=90&f=783ca84720623d6886d02a31fc0f718e"
                               alt="">
@@ -1997,7 +1999,7 @@
 
       </section>
 
-      <section class="editors px-4 row">
+      <section class="editors px-4  d-md-none d-lg-flex row">
 
         <div class="container-fluid">
 
@@ -2011,7 +2013,7 @@
 
 
               <div class="row">
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -2028,7 +2030,7 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <article class="card">
                     <picture>
                       <img class="card-img-top"
@@ -2045,14 +2047,14 @@
                   </article>
                 </div>
 
-                <div class="col-12 col-sm-4">
+                <div class="col-sm-12 col-md-4">
                   <div class="row">
                     <div class="container-fluid d-flex flex-column">
 
 
-                      <div class="col">
+                      <div class="col p-0 m-0">
                         <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                          <div class="more-img ">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566781/china-formula-one.jpg?w=397&h=265&f=bdcdb99bc9e1d1dcf3e017e9adc470d7"
                               alt="">
@@ -2065,9 +2067,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
+                      <div class="col p-0 m-0">
                         <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                          <div class="more-img ">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566735/virginia.jpg?w=135&h=90&f=5718f186c8a391b236f60b78deda0e5b"
                               alt="">
@@ -2080,9 +2082,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
+                      <div class="col p-0 m-0">
                         <div class="container-fluid d-flex b-btm1 more">
-                          <div class="more-img col-5">
+                          <div class="more-img ">
                             <img class="img-fluid img-latest"
                               src="https://d.newsweek.com/en/full/1566715/confederate-flag.jpg?w=135&h=90&f=783ca84720623d6886d02a31fc0f718e"
                               alt="">
@@ -2107,11 +2109,11 @@
 
 
       </section>
-      <hr>
+      <hr class=" d-md-none d-lg-flex">
 
       <section class="subscribe-section container-fluid">
         <div class="container-fluid d-lg-flex">
-          <div class="col-md-7 col-lg-8 col-md-12">
+          <div class="col-lg-7 col-xl-8 col-12">
 
             <div class="row">
               <h3 class="subscribe-header link-red ">Subscribe</h3>
@@ -2145,7 +2147,7 @@
             </div>
           </div>
 
-          <div class="col-md-5 col-xl-4 col-md-12">
+          <div class="col-12 col-xl-4 col-lg-5">
             <h3 class="subscribe-header link-red">NEWSLETTER</h3>
             <div class="container-fluid-lg text-xs-center ht-100">
 
@@ -2180,7 +2182,7 @@
           <div class="contain d-sm-flex px-4">
             <div class="brand-container">
               <a class="brand red-svg" href="/">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
                   style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
                   <g>
@@ -2244,7 +2246,7 @@
       </footer>
     </div>
 
-
+</div>
 </body>
 
 </html>
