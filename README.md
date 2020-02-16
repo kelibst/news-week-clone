@@ -1,8 +1,8 @@
-# appleStore ([The Odin Project](https://web.archive.org/web/20140301004610/http://www.apple.com/))
+# news-week-clone ([The Odin Project](https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap))
 
-This is the first Solo project of the Main HTML/CSS curriculum at [Microverse](https:www.microverse.org/) - @microverseinc. 
+This is the second Solo project of the Main HTML/CSS curriculum at [Microverse](https:www.microverse.org/) - @microverseinc. 
 
-just a clone of an old archived ([apple](https://web.archive.org/web/20140301004610/http://www.apple.com/)) page: 
+It is a clone of the news week ([website](https://www.newsweek.com/)) page: 
 
 ![demopage](demopage.png)
 
@@ -13,7 +13,7 @@ just a clone of an old archived ([apple](https://web.archive.org/web/20140301004
 
 ## Live Demo
 
-[Live Demo Link](https://suspicious-mcclintock-1d92e4.netlify.com/)
+[Live Demo Link](https://sleepy-hoover-a0d80e.netlify.com/)
 
 ## Author
 

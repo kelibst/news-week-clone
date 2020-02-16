@@ -9,7 +9,6 @@ body {
 
 .red-header {
   background: var(--main-bg-color);
-  height: 60px;
 }
 
 header {
@@ -23,6 +22,7 @@ header {
 
 .brand svg {
   fill: white;
+  height: 70px;
 }
 
 .header-date div {
@@ -409,8 +409,8 @@ div.width-60 {
   top: 20%;
 }
 
-.header-middle {
-  width: 200px;
+i.fa-bars {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -440,12 +440,21 @@ div.width-60 {
 }
 
 @media screen and (max-width: 960px) {
-  .header-middle {
-    visibility: hidden;
-  }
-
   .card-body.ps-30 {
     top: 0;
+  }
+
+  .brand svg {
+    height: 50px;
+    float: left;
+    padding-left: 20px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .brand svg {
+    height: 25px;
   }
 }
 
