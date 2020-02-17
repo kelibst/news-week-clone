@@ -178,11 +178,10 @@ header {
   border-right: 0;
 }
 
-/* div.more-img{
-    padding: 0;
-    width: 63px;
-    height: 60px;
-} */
+div.more-img {
+  float: left;
+}
+
 .more-img-2 {
   height: 100px;
 }
@@ -215,8 +214,7 @@ div.more {
 }
 
 .img-latest {
-  max-width: 150px;
-  max-height: 110px;
+  padding-right: 10px;
 }
 
 .b-btm1 {
@@ -329,6 +327,7 @@ div.more {
 div.ht-100,
 .ht-100 {
   height: 100%;
+  min-height: 250px;
 }
 
 div.ht-95 {
@@ -337,7 +336,6 @@ div.ht-95 {
 
 .card-body.ps-30 {
   position: relative;
-  top: 40px;
 }
 
 .featured-stories {
@@ -381,9 +379,8 @@ div.ht-95 {
 
 .img-fluid.img-subs-cover {
   position: absolute;
-  right: 0;
+  left: 20%;
   top: 40px;
-  left: 70px;
 }
 
 .subs-img-2 {
@@ -418,10 +415,6 @@ i.fa-bars {
     min-height: 200px;
   }
 
-  .text-xs-center {
-    text-align: center;
-  }
-
   .ht-100 {
     height: auto;
   }
@@ -450,19 +443,44 @@ i.fa-bars {
     padding-left: 20px;
     width: auto;
   }
+
+  .sticky-container {
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 760px) {
   .brand svg {
     height: 25px;
   }
+
+  .more-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .subscribe {
+    font-size: 12px;
+  }
+
+  .signin {
+    right: 150px;
+    bottom: -5px;
+  }
+
+  .menu-icon {
+    bottom: -13px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .text-xs-center {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 960px) and (min-width: 768px) {
-  .img-latest {
-    width: 100px;
-  }
-
   a.card-bottom-title-link {
     font-size: 14px;
   }
