@@ -180,6 +180,7 @@ header {
 
 div.more-img {
   float: left;
+  padding: 0;
 }
 
 .more-img-2 {
