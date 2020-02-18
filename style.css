@@ -480,9 +480,9 @@ i.fa-bars {
   }
 }
 
-@media screen and (max-width: 370px){
+@media screen and (max-width: 370px) {
   .brand svg {
-    height: 16px;
+    height: 14px;
     padding: 0;
   }
 }
