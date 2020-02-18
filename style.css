@@ -480,6 +480,13 @@ i.fa-bars {
   }
 }
 
+@media screen and (max-width: 370px){
+  .brand svg {
+    height: 16px;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 560px) {
   .text-xs-center {
     text-align: center;
