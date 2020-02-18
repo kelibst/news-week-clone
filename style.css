@@ -491,7 +491,8 @@ i.fa-bars {
   .text-xs-center {
     text-align: center;
   }
-  .signin{
+
+  .signin {
     padding-right: 10px;
   }
 }
@@ -501,11 +502,13 @@ i.fa-bars {
     font-size: 14px;
   }
 }
-@media (max-width: 767px) and (min-width: 481px){
-  .container-fluid.d-block.p-0.m-0.b-btm1.more img{
+
+@media (max-width: 767px) and (min-width: 481px) {
+  .container-fluid.d-block.p-0.m-0.b-btm1.more img {
     width: 258px;
   }
-  .b-btm1{
+
+  .b-btm1 {
     border: none;
   }
 }
