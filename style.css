@@ -473,6 +473,11 @@ i.fa-bars {
   .menu-icon {
     bottom: -13px;
   }
+
+  .brand svg {
+    height: 20px;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 560px) {
